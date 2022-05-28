@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Header*/
+
+header{
+    background-image: linear-gradient(to right, rgb(0, 76, 255) , rgba(0, 255, 208, 0.94));
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1{
+    color: #000;
+    font-family: 'Pacifico', cursive;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li a{
+    color: #fff;
+    padding-right: 20px;
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+header ul li a:hover{
+    color: #000;
+    transition: 0.5s;
+}
+
+
+/*Section*/
+
+#container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#container h2{
+    font-weight: lighter;
+}
+
+section h1{
+    padding-top: 15px;
+    font-weight: lighter;
+    font-size: 30px;
+}
+19995366738
+section h2{
+    padding: 15px;
+}
+
+#bloco-01 div{
+    background-image: linear-gradient(to right, rgb(199, 199, 199) , rgba(255, 255, 255, 0.94));
+    padding: 15px;
+    margin: 15px;
+}
+
+div img{
+    margin: auto;
+    padding: 15px;
+    border-radius: 30px;
+    filter: brightness(50%);
+}
+
+div img:hover{
+    filter: invert();
+}
+
+
+/*footer*/
+
+footer{
+    background-color: #000;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+footer p{
+    text-align: center;
+    color: #fff;
+}
+
+@media screen  and (min-width:427px) and (max-width:730px){
+    div img{
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
+@media screen and  (max-width:426px){
+    header{
+        flex-direction: column;
+    }
+
+    header h1, li{
+        margin: auto;
+    }
+
+    header li{
+        margin-top: 15px;
+    }
+
+    /*Section*/
+
+    section h1{
+        padding: 15px;
+    }
+
+    #container{
+        width: 100%;
+    }
+
+    div img{
+        width: 100%;
+        padding: 0;
+        filter: none;
+    }
+
+    div h2{
+        padding: 15px;
+    }
+
+    #bloco-01 div{
+        margin: 0;
+    }
+    
